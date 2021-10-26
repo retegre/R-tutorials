@@ -1,0 +1,45 @@
+---
+title: "Naming_instructions"
+author: "retegre"
+date: "10/26/2021"
+output: html_document
+---
+
+#                         How to name your files
+
+There are three main principles for good file names. They should be:
+##1. Human readable
+Choose names that are related to the content of the file. Is it a file of demographic data? Don’t call it “my data.csv”. Call it “demographics.csv”.
+Use hyphens “-” to separate words so the file names are easier to read. For example, if you have a file with code that loads and cleans your demographic data, you could call it “load-clean-demographics.r”. It’s easier than “loadcleandemographics.r”. And it’s definitely more relevant than “my data analysis.r”
+##2. Machine readable
+Avoid spaces, punctuation, and any unusual characters.
+Use underscores "_" as delimiters to separate units of metadata. For example, if you have data from different groups, dates and clinics in separate files, you have three units of metadata (group, date and clinic), and a good file name would be: “2020-08-04_group01_clinic04.csv”
+Choose machine readable names
+Use deliberate deliminators
+
+Common approach is using “_” and “-” to deliminate units of metadata in the file names.
+Can use “-” to separate words you want to glob together and “_” to separate different information within a file name.
+Don’t use spaces, punctuation, or capital letters
+
+Don’t use special characters
+
+Using $, @, %, #, &,*, (, ), !, etc. may have meanings in programming languages.
+
+##3. Sortable
+If you have a date in your file name, put the date first, and make sure it’s in the YYYY-MM-DD standard, so your files are ordered chronologically.
+If you have numbers, pad with zeros (01,02,…,09,10,11,… instead of 1,2,…,9,10,11,…) to make sure they are ordered correctly. 
+Choose names that use default ordering
+When not employing version control, a number a methods facilitate file ordering and distinction.
+
+Don’t use the word “final”
+
+Number or date the versions so they can be ordered.
+Put something numeric first
+
+A date or version number is common.
+Left pad version numbers with zeros (eg, 01_file.pdf).
+Use YYYY-MM-DD for dates
+
+The computer will order using this date format.
+
+Also see: File naming from the Open Science Foundation
